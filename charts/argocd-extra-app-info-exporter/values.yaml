@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: mikejoh/argocd-extra-app-info-exporter
   pullPolicy: IfNotPresent
-  tag: "0.1.2"
+  tag: ""
 
 argocdExtraAppInfoExporterFlags:
   interval: 10s
