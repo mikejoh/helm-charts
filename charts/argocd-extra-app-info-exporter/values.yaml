@@ -24,6 +24,7 @@ serviceAccount:
 
 serviceMonitor:
   enabled: false
+  portname: metrics
   suffix: metrics
 
 podAnnotations: {}
