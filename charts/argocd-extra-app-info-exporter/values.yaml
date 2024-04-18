@@ -27,6 +27,9 @@ serviceMonitor:
   portname: metrics
   suffix: metrics
 
+prometheusRule:
+  enabled: false
+
 podAnnotations: {}
 
 podSecurityContext: {}

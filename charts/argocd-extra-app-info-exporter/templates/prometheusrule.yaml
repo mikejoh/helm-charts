@@ -1,0 +1,26 @@
+{{ if .Values.prometheusRule.enabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: {{ include "argocd-extra-app-info-exporter.name" . }}
+  labels:
+    {{- include "argocd-extra-app-info-exporter.labels" . | nindent 4 }}
+spec:
+  groups:
+  - name: {{ include "argocd-extra-app-info-exporter.name" . }}.rules
+    rules:
+    - alert: ApplicationRevisionIsNotMain
+      annotations:
+        summary: The revision for the given application is not main which is not recommended, please change it to main.
+      expr: argocd_extra_app_info{revision!="main"}
+      for: 15m
+      labels:
+        severity: warning
+    - alert: ApplicationRevisionIsNotMain
+      annotations:
+        summary: The revision for the given application is not main which is not recommended, please change it to main.
+      expr: argocd_extra_app_info{revision!="main"}
+      for: 6h
+      labels:
+        severity: critical
+{{ end }}
