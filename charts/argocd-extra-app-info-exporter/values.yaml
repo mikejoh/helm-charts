@@ -6,6 +6,7 @@ image:
   tag: ""
 
 argocdExtraAppInfoExporterFlags:
+  namespace: ""
   interval: 10s
   metrics:
     path: "/metrics"
@@ -54,4 +55,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-

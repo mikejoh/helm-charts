@@ -42,6 +42,10 @@ spec:
             - -metrics-path
             - "{{ .Values.argocdExtraAppInfoExporterFlags.metrics.path }}"
             {{- end }}
+            {{- if .Values.argocdExtraAppInfoExporterFlags.namespace }}
+            - -namespace
+            - "{{ .Values.argocdExtraAppInfoExporterFlags.namespace }}"
+            {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
