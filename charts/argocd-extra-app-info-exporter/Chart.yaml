@@ -3,5 +3,5 @@ name: argocd-extra-app-info-exporter
 
 type: application
 
-version: 0.1.8
-appVersion: "0.1.3"
+version: 0.1.9
+appVersion: "0.1.4"
