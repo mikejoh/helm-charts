@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   argocd-extra-app-info-exporter:
   - apiVersion: v2
+    appVersion: 0.1.5
+    created: "2024-06-04T21:28:25.688002872Z"
+    digest: 8a54415f6dd108faf362a4cd58024121e566734e53c0b51155810a2ba38d1c9c
+    name: argocd-extra-app-info-exporter
+    type: application
+    urls:
+    - https://github.com/mikejoh/helm-charts/releases/download/argocd-extra-app-info-exporter-0.1.10/argocd-extra-app-info-exporter-0.1.10.tgz
+    version: 0.1.10
+  - apiVersion: v2
     appVersion: 0.1.4
     created: "2024-06-04T12:55:03.316701213Z"
     digest: 6fc42c81b5ac0adfc6ab30eb9962dbd07003544209b9d6dc2502d68400795302
@@ -82,4 +91,4 @@ entries:
     urls:
     - https://github.com/mikejoh/helm-charts/releases/download/argocd-extra-app-info-exporter-0.1.0/argocd-extra-app-info-exporter-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-04T12:55:03.31674789Z"
+generated: "2024-06-04T21:28:25.688054799Z"
