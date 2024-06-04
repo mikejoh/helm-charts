@@ -8,6 +8,10 @@ image:
 argocdExtraAppInfoExporterFlags:
   namespace: ""
   interval: 10s
+  excludeRevisions:
+    - "HEAD"
+    - "main"
+    - "master"
   metrics:
     path: "/metrics"
     listenAddress: "0.0.0.0"

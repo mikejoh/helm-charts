@@ -46,6 +46,10 @@ spec:
             - -namespace
             - "{{ .Values.argocdExtraAppInfoExporterFlags.namespace }}"
             {{- end }}
+            {{- if .Values.argocdExtraAppInfoExporterFlags.excludeRevisions }}
+            - -exclude-revisions
+            - "{{ .Values.argocdExtraAppInfoExporterFlags.excludeRevisions | join "," }}"
+            {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
