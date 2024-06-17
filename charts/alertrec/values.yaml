@@ -1,0 +1,60 @@
+replicaCount: 1
+
+image:
+  repository: mikejoh/alertrec
+  pullPolicy: IfNotPresent
+  tag: ""
+
+imagePullSecrets: []
+nameOverride: "alertrec"
+fullnameOverride: "alertrec"
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: "alertrec"
+
+serviceMonitor:
+  enabled: false
+  portName: metrics
+  # TODO: Fix the service monitor!
+
+containerPorts:
+  http: 8080
+  metrics: 9999
+
+alertrec:
+  env:
+    websocketUrl: http://localhost:8080
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext:
+  capabilities:
+    drop:
+      - ALL
+  readOnlyRootFilesystem: true
+  runAsNonRoot: true
+  runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+resources: {}
