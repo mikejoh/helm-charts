@@ -101,4 +101,21 @@ entries:
     urls:
     - https://github.com/mikejoh/helm-charts/releases/download/argocd-extra-app-info-exporter-0.1.0/argocd-extra-app-info-exporter-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-17T14:49:18.60353966Z"
+  local-path-provisioner:
+  - apiVersion: v1
+    appVersion: v0.0.29
+    created: "2024-09-25T18:42:31.907501729Z"
+    description: Use HostPath for persistent local storage with Kubernetes
+    digest: 5de2ae6199a86c4d7e608de12c8b8370b4ce354d626fb42dba8f439a8e2bc234
+    home: https://github.com/rancher/local-path-provisioner
+    keywords:
+    - storage
+    - hostpath
+    kubeVersion: '>=1.12.0-r0'
+    name: local-path-provisioner
+    sources:
+    - https://github.com/rancher/local-path-provisioner.git
+    urls:
+    - https://github.com/mikejoh/helm-charts/releases/download/local-path-provisioner-0.0.29/local-path-provisioner-0.0.29.tgz
+    version: 0.0.29
+generated: "2024-09-25T18:42:31.907531635Z"
