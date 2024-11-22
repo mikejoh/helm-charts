@@ -1,6 +1,6 @@
 apiVersion: v2
 name: imagine
-description: A Helm chart for Kubernetes
+description: The simplest ImagePolicyWebhook webhook example you'll ever find! 🧞
 
 type: application
 version: 0.1.0
