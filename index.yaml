@@ -101,6 +101,17 @@ entries:
     urls:
     - https://github.com/mikejoh/helm-charts/releases/download/argocd-extra-app-info-exporter-0.1.0/argocd-extra-app-info-exporter-0.1.0.tgz
     version: 0.1.0
+  imagine:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-11-22T13:16:20.657002606Z"
+    description: A Helm chart for Kubernetes
+    digest: d6bea380beed12e410d0774d536dec711e71d42107694e70aa9aa4ab63b721fc
+    name: imagine
+    type: application
+    urls:
+    - https://github.com/mikejoh/helm-charts/releases/download/imagine-0.1.0/imagine-0.1.0.tgz
+    version: 0.1.0
   local-path-provisioner:
   - apiVersion: v1
     appVersion: v0.0.29
@@ -118,4 +129,4 @@ entries:
     urls:
     - https://github.com/mikejoh/helm-charts/releases/download/local-path-provisioner-0.0.29/local-path-provisioner-0.0.29.tgz
     version: 0.0.29
-generated: "2024-09-25T18:42:31.907531635Z"
+generated: "2024-11-22T13:16:20.65703192Z"
