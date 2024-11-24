@@ -56,7 +56,7 @@ service:
   # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
   type: ClusterIP
   # This sets the ports more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#field-spec-ports
-  port: 80
+  port: 443
 
 resources:
   {}
@@ -90,17 +90,28 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: []
-# - name: foo
-#   secret:
-#     secretName: mysecret
-#     optional: false
+volumes:
+  - name: cert
+    secret:
+      secretName: webhook-tls
+      items:
+        - key: tls.crt
+          path: webhook.crt
+  - name: key
+    secret:
+      secretName: webhook-tls
+      items:
+        - key: tls.key
+          path: webhook.key
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
-# - name: foo
-#   mountPath: "/etc/foo"
-#   readOnly: true
+volumeMounts:
+  - name: cert
+    readOnly: true
+    mountPath: /etc/ssl/certs/
+  - name: key
+    readOnly: true
+    mountPath: /etc/ssl/private/
 
 nodeSelector: {}
 
