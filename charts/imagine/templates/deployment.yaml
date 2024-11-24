@@ -56,7 +56,7 @@ spec:
             - "-key"
             - "/etc/ssl/private/imagine.key"
             - "-port"
-            - "443"
+            - {{ .Values.service.port | quote }}
             - "-image-name"
             - "nope"
       {{- with .Values.volumes }}
