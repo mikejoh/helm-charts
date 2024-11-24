@@ -1,0 +1,5 @@
+# Artifact Hub repository metadata file
+repositoryID: e3feda56-edcf-4a23-a8d0-9c929aea8b43
+owners: # (optional, used to claim repository ownership)
+  - name: Mikael Johansson
+    email: mik.json@gmail.com
