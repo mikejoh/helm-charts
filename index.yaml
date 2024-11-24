@@ -103,6 +103,17 @@ entries:
     version: 0.1.0
   imagine:
   - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2024-11-24T20:21:09.33787101Z"
+    description: "The simplest ImagePolicyWebhook webhook example you'll ever find!
+      \U0001F9DE"
+    digest: 5cb9c6c6a6df6932110f7d7283623e377d5ca37ab28cac85e5369289ae56bb31
+    name: imagine
+    type: application
+    urls:
+    - https://github.com/mikejoh/helm-charts/releases/download/imagine-0.1.6/imagine-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2024-11-24T20:11:08.437755392Z"
     description: "The simplest ImagePolicyWebhook webhook example you'll ever find!
@@ -184,4 +195,4 @@ entries:
     urls:
     - https://github.com/mikejoh/helm-charts/releases/download/local-path-provisioner-0.0.29/local-path-provisioner-0.0.29.tgz
     version: 0.0.29
-generated: "2024-11-24T20:11:08.437803653Z"
+generated: "2024-11-24T20:21:09.337930141Z"
