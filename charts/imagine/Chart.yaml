@@ -3,5 +3,5 @@ name: imagine
 description: The simplest ImagePolicyWebhook webhook example you'll ever find! 🧞
 
 type: application
-version: 0.1.5
-appVersion: "0.0.1"
+version: 0.1.6
+appVersion: "0.0.2"
