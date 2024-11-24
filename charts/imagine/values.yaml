@@ -93,16 +93,16 @@ autoscaling:
 volumes:
   - name: cert
     secret:
-      secretName: webhook-tls
+      secretName: imagine-tls
       items:
         - key: tls.crt
-          path: webhook.crt
+          path: imagine.crt
   - name: key
     secret:
-      secretName: webhook-tls
+      secretName: imagine-tls
       items:
         - key: tls.key
-          path: webhook.key
+          path: imagine.key
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:

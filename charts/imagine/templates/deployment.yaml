@@ -52,9 +52,9 @@ spec:
           {{- end }}
           args:
             - "-cert"
-            - "/etc/ssl/certs/webhook.crt"
+            - "/etc/ssl/certs/imagine.crt"
             - "-key"
-            - "/etc/ssl/certs/webhook.key"
+            - "/etc/ssl/private/imagine.key"
             - "-port"
             - "443"
             - "-image-name"
