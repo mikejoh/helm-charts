@@ -108,3 +108,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+imagine:
+  disallowedImageName: "nope"

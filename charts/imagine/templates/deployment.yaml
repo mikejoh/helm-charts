@@ -54,7 +54,7 @@ spec:
             - "-port"
             - {{ .Values.service.port | quote }}
             - "-image-name"
-            - "nope"
+            - {{ .Values.imagine.disallowedImageName | quote }}
       {{- with .Values.volumes }}
       volumes:
         {{- toYaml . | nindent 8 }}
