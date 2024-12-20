@@ -12,6 +12,15 @@ entries:
     version: 0.1.0
   argocd-extra-app-info-exporter:
   - apiVersion: v2
+    appVersion: 0.1.6
+    created: "2024-12-20T11:41:05.067663314Z"
+    digest: 50122c365092f35d50bda2b2c69351ecde7ba13f83b354174844ef47bae60157
+    name: argocd-extra-app-info-exporter
+    type: application
+    urls:
+    - https://github.com/mikejoh/helm-charts/releases/download/argocd-extra-app-info-exporter-0.1.11/argocd-extra-app-info-exporter-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v2
     appVersion: 0.1.5
     created: "2024-06-04T21:28:25.688002872Z"
     digest: 8a54415f6dd108faf362a4cd58024121e566734e53c0b51155810a2ba38d1c9c
@@ -228,4 +237,4 @@ entries:
     urls:
     - https://github.com/mikejoh/helm-charts/releases/download/local-path-provisioner-0.0.29/local-path-provisioner-0.0.29.tgz
     version: 0.0.29
-generated: "2024-11-25T20:06:15.260113992Z"
+generated: "2024-12-20T11:41:05.067727794Z"
